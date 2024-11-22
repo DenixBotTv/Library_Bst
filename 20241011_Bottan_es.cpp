@@ -1,5 +1,5 @@
 #include <iostream>
-#include "Bottan_bst_lib.h"
+#include "bst_lib.h"
 
 using namespace std;
 

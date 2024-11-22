@@ -1,17 +1,23 @@
+#ifndef _BST_LIB_H_
+#define _BST_LIB_H_
+
 #include <iostream>
 using namespace std;
 
-struct Node{
-	int valore;
-	int weigth;
-	Node *lchild;
-	Node *rchild;
-	Node(int a){
-		valore=a;
-        weigth=1;
-		lchild=nullptr;
-		rchild=nullptr;
-	}
+class Node{
+    private:
+        int valore;
+        int weigth;
+        Node *lchild;
+        Node *rchild;
+    public:
+        Node(int a){
+            valore=a;
+            weigth=1;
+            lchild=nullptr;
+            rchild=nullptr;
+        }
+
 };
 
 Node* RicorsiveInsert(Node*R,int N){
@@ -179,3 +185,7 @@ bool IsBST(Node* Root){
     }
     //Sono al corrente che non è quello richiesto nei prossimi giorni cerco di trovare una implementazione corretta per il controllo di tutto l'albero
 }
+
+
+
+#endif
