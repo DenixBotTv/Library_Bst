@@ -1,19 +1,36 @@
+#ifndef _BST_LIB_H_
+#define _BST_LIB_H_
+
 #include <iostream>
 using namespace std;
 
-struct Node{
-	int valore;
-	int weigth;
-	Node *lchild;
-	Node *rchild;
-	Node(int a){
-		valore=a;
-        weigth=1;
-		lchild=nullptr;
-		rchild=nullptr;
-	}
+class Node{
+    private:
+        int valore;
+        int weigth;
+        Node *lchild;
+        Node *rchild;
+    public:
+        Node(int a){
+            valore=a;
+            weigth=1;
+            lchild=nullptr;
+            rchild=nullptr;
+        }
+        bool searchI(int k);  // ricerca iterativa di k
+        bool searchR(int k);  // ricerca ricorsiva di k
+        Node* insertI(int k);  // inserimento iterativa di k
+        Node* insertR(int k);  // inserimento ricorsivo di k
+        void inOrder(); //attraversamento in inOrder
+        friend ostream operator<<(ostream& Os,const Node& Node);
+        friend istream operator<<(istream& Is,const Node& Node);
+
 };
 
+
+
+
+/*
 Node* RicorsiveInsert(Node*R,int N){
 	if (R==nullptr)
 	{
@@ -179,3 +196,7 @@ bool IsBST(Node* Root){
     }
     //Sono al corrente che non è quello richiesto nei prossimi giorni cerco di trovare una implementazione corretta per il controllo di tutto l'albero
 }
+
+*/
+
+#endif

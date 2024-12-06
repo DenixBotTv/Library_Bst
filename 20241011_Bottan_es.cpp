@@ -1,11 +1,13 @@
 #include <iostream>
-#include "Bottan_bst_lib.h"
+#include "bst_lib.h"
 
 using namespace std;
 
 int main() {
     Node* Root = new Node(49);
     int Selector{0};
+
+/*
 
     do {
         cout << "\n--- Menu ---" << endl;
@@ -100,6 +102,6 @@ int main() {
         }
 
     } while (Selector != 0);
-
+*/
     return 0;
 }
