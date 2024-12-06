@@ -18,8 +18,17 @@ class Node{
             rchild=nullptr;
         }
 
+        bool searchI(int k);  // ricerca iterativa di k
+        bool searchR(int k);  // ricerca ricorsiva di k
+        Node* insertI(int k);  // inserimento iterativa di k
+        Node* insertR(int k);  // inserimento ricorsivo di k
+        void inOrder(); //attraversamento in inOrder
 };
 
+
+
+
+/*
 Node* RicorsiveInsert(Node*R,int N){
 	if (R==nullptr)
 	{
@@ -186,6 +195,6 @@ bool IsBST(Node* Root){
     //Sono al corrente che non è quello richiesto nei prossimi giorni cerco di trovare una implementazione corretta per il controllo di tutto l'albero
 }
 
-
+*/
 
 #endif

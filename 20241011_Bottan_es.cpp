@@ -7,6 +7,8 @@ int main() {
     Node* Root = new Node(49);
     int Selector{0};
 
+/*
+
     do {
         cout << "\n--- Menu ---" << endl;
         cout << "1. Inserire un nuovo nodo (Metodo Ricorsivo)" << endl;     //DONE
@@ -100,6 +102,6 @@ int main() {
         }
 
     } while (Selector != 0);
-
+*/
     return 0;
 }
