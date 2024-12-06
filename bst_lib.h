@@ -17,12 +17,14 @@ class Node{
             lchild=nullptr;
             rchild=nullptr;
         }
-
         bool searchI(int k);  // ricerca iterativa di k
         bool searchR(int k);  // ricerca ricorsiva di k
         Node* insertI(int k);  // inserimento iterativa di k
         Node* insertR(int k);  // inserimento ricorsivo di k
         void inOrder(); //attraversamento in inOrder
+        friend ostream operator<<(ostream& Os,const Node& Node);
+        friend istream operator<<(istream& Is,const Node& Node);
+
 };
 
 
