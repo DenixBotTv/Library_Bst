@@ -22,6 +22,10 @@ class Node{
         Node* insertI(int k);  // inserimento iterativa di k
         Node* insertR(int k);  // inserimento ricorsivo di k
         void inOrder(); //attraversamento in inOrder
+        void preOrder(); //attraversamento in preOrder
+        void postOrder(); //attraversamento in postOrder
+        Node* deleteNode(int k); // cancellazione del nodo k
+        bool isBst(); //verifica che sia un bst o meno
         friend ostream operator<<(ostream& Os,const Node& Node);
         friend istream operator<<(istream& Is,const Node& Node);
 
