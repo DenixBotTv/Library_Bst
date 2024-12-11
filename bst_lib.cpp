@@ -22,7 +22,7 @@ ostream& operator<<(ostream& Os, Node* node){
 
 istream& operator>>(istream& Is, Node* node){
     int k{0};
-    cin >> k;
+    Is >> k;
     node->valore=k;
     node->weigth=1;
     node->lchild=nullptr;
