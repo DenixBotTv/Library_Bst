@@ -5,7 +5,6 @@ using namespace std;
 
 int main() {
     Node* Root = new Node(49);
-    int Selector{0};
 
 /*
 
