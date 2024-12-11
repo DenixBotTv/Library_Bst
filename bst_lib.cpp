@@ -17,6 +17,7 @@ ostream& operator<<(ostream& Os, Node* node){
     }else{
         Os << "Il valore del figlio sinitro è: " << node->rchild->valore;
     }
+    return Os;
 }
 
 
@@ -28,4 +29,5 @@ istream& operator>>(istream& Is, Node* node){
     node->lchild=nullptr;
     node->rchild=nullptr;
     Is >> node;
+    return Is;
 }
